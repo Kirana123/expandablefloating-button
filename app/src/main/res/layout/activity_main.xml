@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expandable Button Example.!"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.281" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textColor="@color/white"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/green"
+        android:text="Actions"
+        android:tint="@color/black"
+        app:icon="@drawable/ic_baseline_add_circle_outline_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_privacy_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/green"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/add_fab"
+        app:layout_constraintEnd_toEndOf="@+id/add_fab"
+        app:srcCompat="@drawable/ic_baseline_verified_user_24" />
+
+    <TextView
+        android:id="@+id/add_privacy_action_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Verification"
+        app:layout_constraintBottom_toBottomOf="@+id/add_privacy_fab"
+        app:layout_constraintEnd_toStartOf="@+id/add_privacy_fab"
+        app:layout_constraintTop_toTopOf="@+id/add_privacy_fab"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_alarm_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/green"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/add_privacy_fab"
+        app:layout_constraintEnd_toEndOf="@+id/add_privacy_fab"
+        app:srcCompat="@drawable/ic_baseline_access_alarm_24" />
+
+    <TextView
+        android:id="@+id/add_alarm_action_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Add Alarm"
+        app:layout_constraintBottom_toBottomOf="@+id/add_alarm_fab"
+        app:layout_constraintEnd_toStartOf="@+id/add_alarm_fab"
+        app:layout_constraintTop_toTopOf="@+id/add_alarm_fab" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_person_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/white"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/green"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/add_alarm_fab"
+        app:layout_constraintEnd_toEndOf="@+id/add_alarm_fab"
+        app:layout_constraintStart_toStartOf="@+id/add_alarm_fab"
+        app:srcCompat="@drawable/ic_baseline_person_add_alt_1_24" />
+
+    <TextView
+        android:id="@+id/add_person_action_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Add Person"
+        app:layout_constraintBottom_toBottomOf="@+id/add_person_fab"
+        app:layout_constraintEnd_toStartOf="@+id/add_person_fab"
+        app:layout_constraintTop_toTopOf="@+id/add_person_fab" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_card_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/white"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/green"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/add_person_fab"
+        app:layout_constraintEnd_toEndOf="@+id/add_person_fab"
+        app:layout_constraintStart_toStartOf="@+id/add_person_fab"
+        app:srcCompat="@drawable/ic_baseline_add_chart_24" />
+
+    <TextView
+        android:id="@+id/add_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="Add Card"
+        app:layout_constraintBottom_toBottomOf="@+id/add_card_fab"
+        app:layout_constraintEnd_toStartOf="@+id/add_card_fab"
+        app:layout_constraintTop_toTopOf="@+id/add_card_fab"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_call_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/white"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/green"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/add_card_fab"
+        app:layout_constraintEnd_toEndOf="@+id/add_card_fab"
+        app:layout_constraintStart_toStartOf="@+id/add_card_fab"
+        app:srcCompat="@drawable/ic_baseline_add_ic_call_24" />
+
+    <TextView
+        android:id="@+id/call_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="Add Call"
+        app:layout_constraintBottom_toBottomOf="@+id/add_call_fab"
+        app:layout_constraintEnd_toStartOf="@+id/add_call_fab"
+        app:layout_constraintTop_toTopOf="@+id/add_call_fab"
+        app:layout_constraintVertical_bias="0.486" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
